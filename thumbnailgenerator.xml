@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="edocman" method="upgrade">
+	<name>EDocman - Thumbnail Generator</name>
+	<author>Comdion GmbH</author>
+	<creationDate>July 2020</creationDate>
+	<copyright>Comdion GmbH, mwllgr</copyright>
+	<license></license>
+	<authorEmail>office@comdion.at</authorEmail>
+	<authorUrl>https://comdion.at</authorUrl>
+	<version>1.0.0</version>
+	<description>Auto-generates PDF thumbnails after a new document is uploaded.</description>
+	<files>
+		<filename plugin="thumbnailgenerator">thumbnailgenerator.php</filename>
+        <filename>index.html</filename>
+	</files>
+	<languages>
+	</languages>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+                <field name="thumbgen_page" type="text"
+                    description="Page used for generation"
+                    label="Thumbnail page in PDF"
+                />
+            </fieldset>
+		</fields>
+	</config>
+</extension>
