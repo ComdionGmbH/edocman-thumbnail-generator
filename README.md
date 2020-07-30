@@ -15,5 +15,9 @@ You can search for "EDocman Thumbnail".
 
 You can change the page that is used for generating the thumbnail (starting at 1 for page 1 - not 0).
 
+### Watermark
+The PDF Thumbnail Generator includes a watermarking function (not enabled by default).  
+Options to enable it and changing the text/font size are in the plugin settings.
+
 ## Logs
 You can find the logs at `/logs/edocman_thumbnail_generator.log.php`. Access to this file from a browser is disallowed.
