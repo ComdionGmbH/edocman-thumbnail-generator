@@ -7,7 +7,7 @@
 	<license></license>
 	<authorEmail>office@comdion.at</authorEmail>
 	<authorUrl>https://comdion.at</authorUrl>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>Auto-generates PDF thumbnails after a new document is uploaded.</description>
 	<files>
 		<filename plugin="thumbnailgenerator">thumbnailgenerator.php</filename>
@@ -18,9 +18,29 @@
 	<config>
 		<fields name="params">
             <fieldset name="basic">
-                <field name="thumbgen_page" type="text"
+                <field name="thumbgen_page" type="number"
+                    hint="1"
                     description="Page used for generation"
                     label="Thumbnail page in PDF"
+                    min="1"
+                    step="1"
+                />
+                <field name="thumbgen_enable_watermark" type="radio" default="0" label="Enable watermark" description="Enables the watermark overlay"
+                    class="btn-group btn-group-yesno" required="1">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="thumbgen_watermark_text" type="text"
+                    description="Text for watermark"
+                    label="Watermark text"
+                    hint="Preview"
+                />
+                <field name="thumbgen_watermark_size" type="number"
+                    hint="20"
+                    description="Font size for watermark"
+                    label="Watermark font size"
+                    min="1"
+                    step="1"
                 />
             </fieldset>
 		</fields>

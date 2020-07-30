@@ -4,7 +4,7 @@ This Joomla plugin automatically generates missing images for PDF documents in E
 ## Setup
 
 * Install the imagick extension for your PHP version (e.g. `sudo apt-get install php-imagick -y`)
-* Download [thumbnailgenerator.zip](https://github.com/ComdionGmbH/edocman-thumbnail-generator/releases/download/1.0.0/thumbnailgenerator.zip) from the Releases and install the plugin in Joomla!
+* Download [thumbnailgenerator.zip](https://github.com/ComdionGmbH/edocman-thumbnail-generator/releases/download/1.1.0/thumbnailgenerator.zip) from the Releases and install the plugin in Joomla!
 * Enable the plugin
 
 If a document without an image (or the thumbnail just got deleted) is saved, an image will be generated.
